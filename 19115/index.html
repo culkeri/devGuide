@@ -322,18 +322,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../catalog/" class="md-nav__link">
-        Project Managment
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../publish/" class="md-nav__link">
         Publishing
       </a>
@@ -379,8 +367,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
-    Metadata
+  <a href="#metadata-standards" class="md-nav__link">
+    Metadata Standards
   </a>
   
 </li>
@@ -447,10 +435,49 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Knowledge Centre
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Knowledge Centre" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Knowledge Centre
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
     <li class="md-nav__item">
       <a href="../resources/" class="md-nav__link">
-        Resources
+        (placeholder)
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/" class="md-nav__link">
+        Project Managment
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -481,8 +508,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
-    Metadata
+  <a href="#metadata-standards" class="md-nav__link">
+    Metadata Standards
   </a>
   
 </li>
@@ -542,17 +569,17 @@
                 
                 
                 <h1 id="geospatial-standards-iso-19115hnap">GeoSpatial Standards - ISO 19115*HNAP</h1>
-<h3 id="metadata">Metadata</h3>
-<p>Metadata helps people find the spatial data they need and determine how best to use it. Metadata supports users in locating and accessing their resources, and data consumers in locating and using geodata resources produced by others. </p>
-<p>Metadata includes compound data about the content, quality, condition, and other characteristics of geodata.</p>
+<h2 id="metadata-standards">Metadata Standards</h2>
+<p>Metadata supports users in locating and accessing their resources, and data consumers in locating and using geodata resources produced by others. </p>
+<p>Metadata includes information about the content, quality, condition, and other characteristics of geodata.  It is necessary to document the temporal and spatial context of your data.</p>
 <p><img alt="🌎" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f30e.svg" title=":earth_americas:" /> <b> The DAaaS Geospatial Platform utalizes the following standards: <ins>ISO 19115-2003 HNAP </ins>, GeoDCAT-ap, SDMX. </b></p>
 <p>Standards facilitate the creation, sharing, and general use of geospatial data. Standards are necessary for interoperability between platforms, especially in the cloud environment.</p>
 <hr />
-<h3 id="19115-2003-hnap">19115-2003 HNAP</h3>
+<h2 id="19115-2003-hnap">19115-2003 HNAP</h2>
 <p>The North American Profile of ISO 19115 - Geographic information - Metadata (HNAP - Metadata), published by the Canadian General Standards Board, identifies the geospatial metadata needed for North America to describe geospatial data, including dataset and dataset series, and related Web services. </p>
 <p>This metadata format is a Canadian variant of the North America Profile of ISO 19115 2003, which has a defined XML schema that supports federal government requirements. However, HNAP is not fully compatible with either the ISO or the NAP standards and thus requires unique processing which has been inigrated in the DAaaS Platform.</p>
 <h4 id="mandatory-elements">Mandatory Elements</h4>
-<p>This section provides guidelines for populating  minimum mandatory metadata elements for Government of Canada geospatial datasets.</p>
+<p>This section provides guidelines for populating the minimum mandatory metadata elements for Government of Canada geospatial datasets.</p>
 <table>
 <thead>
 <tr>
@@ -562,11 +589,11 @@
 </thead>
 <tbody>
 <tr>
-<td><b>Metadata Information</b></td>
 <td></td>
+<td><b>Section 1: Metadata Information</b></td>
 </tr>
 <tr>
-<td>*File Identifier</td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> *File Identifier</td>
 <td>Each metadata record shall have a universal unique identifier (UUID)</td>
 </tr>
 <tr>
@@ -595,7 +622,7 @@
 </tr>
 <tr>
 <td>*Date</td>
-<td>Date that the <ins>metadata</ins> was created or last modified  (date or dateTime type).</td>
+<td>Date that the metadata was created or last modified  (date or dateTime type).</td>
 </tr>
 <tr>
 <td>*Metadata Standard Name</td>
@@ -606,8 +633,8 @@
 <td>EPSG code or SR-ORG code.</td>
 </tr>
 <tr>
-<td><b>Identification Information</b></td>
 <td></td>
+<td><b>Section 2: Identification Information</b></td>
 </tr>
 <tr>
 <td>Tite</td>
@@ -638,7 +665,7 @@
 <td>Brief narrative summary of the dataset's contents</td>
 </tr>
 <tr>
-<td>Status</td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" />Status</td>
 <td>Development phase of the dataset- see codelist !!DEAD LINK!!</td>
 </tr>
 <tr>
@@ -646,8 +673,8 @@
 <td>Revision cycle of the data.</td>
 </tr>
 <tr>
-<td>Keyword</td>
-<td><b> !!THIS NEEDS TO BE ADDRESSES IN DEV!! </b></td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" />Keyword</td>
+<td>Codelist. <img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" />-link-<img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" /></td>
 </tr>
 <tr>
 <td>*Title</td>
@@ -678,16 +705,16 @@
 <td>Role of the organization responsible for the thesaurus.</td>
 </tr>
 <tr>
-<td>*Use Limitation</td>
-<td>??For data assessed and approved for release under the Open Government Licence??</td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" />*Use Limitation</td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" /></td>
 </tr>
 <tr>
-<td>*Access Constraints</td>
-<td>??</td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" />*Access Constraints</td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" /></td>
 </tr>
 <tr>
-<td>*User Constraints</td>
-<td>??</td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" />*User Constraints</td>
+<td><img alt="🚩" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a9.svg" title=":triangular_flag_on_post:" /></td>
 </tr>
 <tr>
 <td>Spatial Representation Type</td>
@@ -722,8 +749,8 @@
 <td>Beginning or Start date of the time period that a particular dataset covers or describes</td>
 </tr>
 <tr>
-<td><b>Distribution Information</b></td>
 <td></td>
+<td><b>Section 3: Distribution Information</b></td>
 </tr>
 <tr>
 <td>Name (file format)</td>
@@ -731,11 +758,7 @@
 </tr>
 <tr>
 <td>Version</td>
-<td>Version number or date of the format (alt</td>
-</tr>
-<tr>
-<td>uknown)</td>
-<td></td>
+<td>Version number or date of the format (or: uknown)</td>
 </tr>
 <tr>
 <td>Orginazation Name</td>
@@ -750,8 +773,8 @@
 <td>Reponsible party function; Suggestion: distributor; distributeur</td>
 </tr>
 <tr>
-<td><b>Web Map Service</b> (if necessary)</td>
 <td></td>
+<td><b>Section 4: Web Map Service</b> (if necessary)</td>
 </tr>
 <tr>
 <td>Linkage (Service URL)</td>
@@ -776,15 +799,15 @@
 <p></p>
 <br></p>
 <hr />
-<h3 id="geodcat-ap">GeoDCAT-ap</h3>
+<h2 id="geodcat-ap">GeoDCAT-ap</h2>
 <p>GeoDCAT is a vocabulary designed to facilitate interoperability between catalogs.  It increases discoverability and will enable federalization of datasets.  GeoDCAT does not replace 19115; its purpose is to enhance it for catalogs.  </p>
 <p>GeoDCAT is for the exchange of descriptions of geospatial datasets, dataset series and services. It provides an RDF syntax binding for the union of all metadata elements defined in the core profile 19115.</p>
 <p>The DAaaS Platform automatically coverts your ISO 19115 metadata file into GeoDCAT.</p>
 <hr />
-<h3 id="sdmx">SDMX</h3>
+<h2 id="sdmx">SDMX</h2>
 <p>SDMX 3.0 ...</p>
 <hr />
-<h3 id="learn-more">Learn More</h3>
+<h2 id="learn-more">Learn More</h2>
 <p>List of resources to learn more</p>
 <p><a href="https://www.w3.org/TR/vocab-dcat/">DCAT Standard</a></p>
 <p><a href="http://www.gcpedia.gc.ca/wiki/Federal_Geospatial_Platform/Policies_and_Standards/Catalogue/Release/Appendix_B_Guidelines_and_Best_Practices/Guide_to_Harmonized_ISO_19115:2003_NAP">Government of Canada Geospatial Standards(Internal GC Only)</a></p>
@@ -829,7 +852,7 @@
               <span class="md-footer__direction">
                 Next
               </span>
-              Resources
+              (placeholder)
             </div>
           </div>
           <div class="md-footer__button md-icon">

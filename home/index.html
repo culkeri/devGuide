@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Simple GIS Intro - GeoSpatial Platform - Development Draft</title>
+  <title>About - GeoSpatial Platform - Development Draft</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Simple GIS Intro";
-    var mkdocs_page_input_path = "intro.md";
+    var mkdocs_page_name = "About";
+    var mkdocs_page_input_path = "home.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -46,8 +46,14 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../home/">About</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">About</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#services-deployed">Services Deployed</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#in-development">In Development</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <ul>
@@ -99,14 +105,8 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Knowledge Centre</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Simple GIS Intro</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#about-spatial-data">About Spatial Data</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#gis-vocabulary">GIS Vocabulary</a>
-    </li>
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../intro/">Simple GIS Intro</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../resources/">Training and Tutorials</a>
                     </li>
@@ -143,12 +143,8 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Knowledge Centre &raquo;</li>
-        
-      
     
-    <li>Simple GIS Intro</li>
+    <li>About</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -160,126 +156,31 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="a-simple-introduction-to-geospatial-analysis">A Simple Introduction to Geospatial Analysis</h1>
-<p align='center'>
-<img src="https://i.ibb.co/TrGQv9f/intro.png" alt="html picture">
-</p>
-<p><strong>Geospatial analysis is concerned with the quantitative location of important features, known as phenomena.</strong></p>
-<p>Geospatial data is data about phenomena that have a location on the surface of the earth. The location may be static (ex- the location of a road, a disaster event, citizens living in poverty), or dynamic (ex- a moving vehicle or pedestrian, the spread of COVID)
-<br></p>
-<p>A GIS (Geospatial Information System) helps us analyze spatial relationships and patterns amongst these phenomena. It is particularly useful for visualizing spatial data and reporting results of analysis.</p>
-<p>GIS' are composed of both hardware and software components. Due to the large volumes of spatial data and the need to display values on the fly, GIS hardware often have large storage capacities, fast computing speed, and powerful memory. <b>DAaaS has been designed meet these users neeeds.</b></p>
+                <h1 id="welcome-to-the-daaas-geospatial-guide">Welcome to the DAaaS Geospatial Guide</h1>
+<p><strong>A modern geospatial framework that aligns to industry and open standards where users can access shared services to create geospatial statistical data for analytics and visualization.</strong></p>
 <hr />
-<h3 id="about-spatial-data">About Spatial Data</h3>
-<p>Spatial data are data types (files, databases, web services) that encode geographic information for use in location-aware applications.
-There are two types:</p>
-<ol>
-    <li> <b>Vector data</b>
-        <ul>
-        <li>points (x, y, z coordinates)
-        <li>lines (roads, networks) 
-        <li>polygons (areas).
-        </ul></li>
-
-    <li> <b>Raster data</b>
-        <ul>
-        <li> images or grids of digital values; eg. satellite imagery.
-        </li></ul>
-</ol>
-
-<p>A <b>spatial database</b> — also known as a “<b>geodatabase</b>” — is built to capture and store the points, lines, and polygons.</p>
-<h3 id="gis-vocabulary">GIS Vocabulary</h3>
-<table>
-<thead>
-<tr>
-<th>Term</th>
-<th></th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Base Map</td>
-<td></td>
-<td>GIS data and/or imagery that form the background setting for a map</td>
-</tr>
-<tr>
-<td>Coordinates</td>
-<td></td>
-<td>Values represented by the letters x, y, z [or m (measure)], that define a position within a spatial reference</td>
-</tr>
-<tr>
-<td>DCAT, geoDCAT-ap</td>
-<td></td>
-<td>Metadata standrad to make spatial datasets, dataset series, and services searchable on general data catalogs</td>
-</tr>
-<tr>
-<td>EO, Earth Observation</td>
-<td></td>
-<td>Information about the planet Earth gathered via remote-sensing technologies and by ground-based techniques (ex- satellite or drone imagery</td>
-</tr>
-<tr>
-<td>ETL</td>
-<td></td>
-<td>Procedure of copying data from sources into a destination system which represents the data differently from the source or in a different context than the source</td>
-</tr>
-<tr>
-<td>Generalization</td>
-<td></td>
-<td>Method used in GIS to reduce detail in data (for privacy and/or visualizing)</td>
-</tr>
-<tr>
-<td>Geocode</td>
-<td></td>
-<td>The process of identifying a location by one or more attributes from a layer.</td>
-</tr>
-<tr>
-<td>HNAP</td>
-<td></td>
-<td>HNAP-Canada is a profile on Harmonized North American Profile which itself is a profile on ISO19139 (ISO 19115*)</td>
-</tr>
-<tr>
-<td>Layer</td>
-<td></td>
-<td>Thematic data described and stored in a map library. Layers act as transparencies that can be laid atop one another for viewing or spatial analysis.</td>
-</tr>
-<tr>
-<td>OGC</td>
-<td></td>
-<td>Open Geospatial Consortium- Open Source champion.....</td>
-</tr>
-<tr>
-<td>Term</td>
-<td></td>
-<td>Description</td>
-</tr>
-<tr>
-<td>Shapefile</td>
-<td></td>
-<td>vector data storage format for storing the location, shape, and attributes. It is stored in a set of 4 related files and contains one feature class. <em>shapefiles should be avoided in production</em></td>
-</tr>
-<tr>
-<td>Term</td>
-<td></td>
-<td>Description</td>
-</tr>
-<tr>
-<td>WMS</td>
-<td></td>
-<td>specifications that provides uniform access by Web clients to maps rendered by map servers on the Internet</td>
-</tr>
-<tr>
-<td>WFS</td>
-<td></td>
-<td>specifications that standardizes data manipulation and map display on the Internet</td>
-</tr>
-<tr>
-<td>Term</td>
-<td></td>
-<td>Description</td>
-</tr>
-</tbody>
-</table>
+<h2 id="services-deployed">Services Deployed</h2>
+<p><b>QGIS on AAW </b> - <a href="/qgis">learn more</a> 
+<b>ArcEnterprise for DAaaS</b>
+<b>Spatial Data ingestion Pipeline</b>
+<br></p>
+<hr />
+<h2 id="in-development">In Development</h2>
+<ul>
+<li>
+<p>Spatial data ingestion and transformation</p>
+</li>
+<li>
+<p>Spatial data catalog, management and storage</p>
+</li>
+<li>
+<p>Routing &amp; Geocoding analytics</p>
+</li>
+<li>
+<p>Data visualization</p>
+</li>
+</ul>
+<hr />
               
             </div>
           </div>
@@ -287,10 +188,8 @@ There are two types:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../resources/" class="btn btn-neutral float-right" title="Training and Tutorials">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../login/" class="btn btn-neutral float-right" title="Logging In">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../pipeline/" class="btn btn-neutral" title="Pipelines"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -318,10 +217,8 @@ There are two types:</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../pipeline/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../resources/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../login/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -265,13 +265,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#azure-data-factory" class="md-nav__link">
-    Azure Data Factory
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#virtual-machine" class="md-nav__link">
     Virtual Machine
   </a>
@@ -286,15 +279,15 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#pgadmin" class="md-nav__link">
     pgAdmin
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -308,6 +301,13 @@
           <li class="md-nav__item">
   <a href="#qgis" class="md-nav__link">
     QGIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-data-factory" class="md-nav__link">
+    Azure Data Factory
   </a>
   
 </li>
@@ -614,13 +614,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#azure-data-factory" class="md-nav__link">
-    Azure Data Factory
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#virtual-machine" class="md-nav__link">
     Virtual Machine
   </a>
@@ -635,15 +628,15 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#pgadmin" class="md-nav__link">
     pgAdmin
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -657,6 +650,13 @@
           <li class="md-nav__item">
   <a href="#qgis" class="md-nav__link">
     QGIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-data-factory" class="md-nav__link">
+    Azure Data Factory
   </a>
   
 </li>
@@ -713,14 +713,7 @@
 <p><code>Stolen from CAE</code></p>
 </blockquote>
 <h2 id="accessing-azure-postgresql-database">Accessing Azure PostgreSQL Database</h2>
-<h3 id="azure-data-factory">Azure Data Factory</h3>
-<p>A linked service can be setup inside Azure Data Factory.
-Username is <strong>Cloud account username</strong> or AD group name if access was granted to a AD group, followed by the server name.
-Password is an Azure AD access Token as described below in step 6 of pgAdmin section</p>
-<p><img alt="ConnectDataFactorySynapse1" src="../images/PgSql_08.png" />
-or
-<img alt="ConnectDataFactorySynapse2" src="../images/PgSql_09.png" /></p>
-<p>Please contact the support team through the https://cae-eac.slack.com channel if you need assistance.</p>
+<hr />
 <h3 id="virtual-machine">Virtual Machine</h3>
 <p>You can access an Azure PostgreSQL database from your cloud virtual machine, using various applications including:
 1. pgAdmin 
@@ -729,9 +722,10 @@ or
 <h4 id="prerequisites">Prerequisites</h4>
 <ol>
 <li>A <strong>virtual machine</strong> in the Collaborative Analytics Environment (CAE). See the <a href="../vm/">VM page</a> for more information.</li>
-<li><strong>pgAdmin</strong> or <strong>Azure Data Studio</strong> and <strong>Visual Studio Code</strong>. Those two are available by default in the <strong>Windows Data Science Virtual Machine</strong> images.  </li>
+<li><strong>pgAdmin</strong> or <strong>Azure Data Studio</strong> and <strong>Visual Studio Code</strong>. Those two are available by default in the <strong>Windows GEO Virtual Machine</strong> images.<br />
+<br></li>
 </ol>
-<h3 id="pgadmin">pgAdmin</h3>
+<h4 id="pgadmin">pgAdmin</h4>
 <p>This is one of the common tool for PostgreSQL database administration.</p>
 <ol>
 <li>
@@ -765,11 +759,38 @@ or
 <p>The output is as follow, where you will need to copy the value for accessToken and use it as Password in  pgAdmin</p>
 <p><img alt="AccessToken" src="../images/PgSql_05.png" /></p>
 <h3 id="arcpro">ArcPro</h3>
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<hr />
 <h3 id="qgis">QGIS</h3>
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<hr />
+<h3 id="azure-data-factory">Azure Data Factory</h3>
+<p>A linked service can be setup inside Azure Data Factory.
+Username is <strong>Cloud account username</strong> or AD group name if access was granted to a AD group, followed by the server name.
+Password is an Azure AD access Token as described below in step 6 of pgAdmin section</p>
+<p><img alt="ConnectDataFactorySynapse1" src="../images/PgSql_08.png" />
+or
+<img alt="ConnectDataFactorySynapse2" src="../images/PgSql_09.png" /></p>
+<p>Please contact the support team through the https://cae-eac.slack.com channel if you need assistance.</p>
 <hr />
 <h2 id="accessing-raster-storage">Accessing Raster Storage</h2>
 <h3 id="fileshare">Fileshare</h3>
+<p>1.</p>
+<p>2.</p>
+<p>3.</p>
+<hr />
 <h3 id="file-blob">File Blob</h3>
+<p>1.</p>
+<p>2.</p>
+<p>3.</p>
 
               
             </article>
@@ -839,7 +860,7 @@ or
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["tabs"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3a4b43e5.min.js"></script>
